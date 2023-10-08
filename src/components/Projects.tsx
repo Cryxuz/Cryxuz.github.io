@@ -2,7 +2,11 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    <div>Projects</div>
+    <div className='bg-slate-600 bg-opacity-70'>
+      <div>
+        <h2>Here are some of my work.</h2>
+      </div>
+    </div>
   )
 }
 

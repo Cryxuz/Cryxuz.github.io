@@ -1,10 +1,10 @@
-import dev from '../assets/dev.jpg'
+import about from '../assets/about.jpg'
 
 const About = () => {
   return (
     <div>
-      <div className=" bg-center bg-cover" style={{backgroundImage: `url(${dev})`}}>
-        <div className="h-[600px] bg-opcity-75 flex justify-center"></div>
+      <div className="bg-fixed bg-center bg-cover" style={{backgroundImage: `url(${about})`}}>
+        <div className="h-screen bg-opcity-75 flex justify-center"></div>
       </div>
     </div>
   )
