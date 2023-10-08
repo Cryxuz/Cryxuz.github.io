@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div>
       <div className="bg-fixed bg-center bg-cover text-center " style={{backgroundImage: `url(${home})`}}>
-      <div className="h-screen justify-center pt-[220px]">
+      <div className="h-screen justify-center pt-[220px] md:pt-[190px]">
         
           <h1 className='text-4xl md:text-5xl lg:text-6xl font-extrabold '>Kia ora, I'm Paul.</h1>
           <p className='text-md md:text-2xl lg:text-3xl'>My goal is to provide users with memorable and efficient interactions."</p>
