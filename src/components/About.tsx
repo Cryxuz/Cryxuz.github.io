@@ -1,14 +1,24 @@
 import about from '../assets/about.jpg'
+import me from '../assets/me.png'
 
 const About = () => {
   return (
     <div>
-      <div className="bg-fixed bg-center bg-cover grid grid-cols-2 " style={{backgroundImage: `url(${about})`}}>
-        <p className='text-slate-50 p-[10%] text-4xl leading-relaxed'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt non voluptate eius consequuntur alias minus eligendi quidem vel, dicta placeat id dolorum perferendis, necessitatibus quod sint in voluptas eos laboriosam!
-        Soluta iure molestias, officia cumque sequi repudiandae odit perspiciatis delectus beatae sapiente ullam harum nam voluptatum odio neque recusandae veniam. Quam veritatis eveniet ducimus voluptas quae nihil quaerat ullam quos?
-        Assumenda, ipsam incidunt. Repudiandae, eos laboriosam doloribus porro facilis at quidem. Sequi, aliquam repudiandae odio quasi, ab dignissimos dolore explicabo recusandae expedita mollitia repellendus, impedit dolores! Aliquid ullam repellendus perferendis?</p>
-        <div className="h-screen bg-opcity-75 flex justify-center"></div>
-      </div>
+      <div className="bg-fixed bg-center bg-cover " style={{backgroundImage: `url(${about})`}}>
+
+         
+
+          <div className='lg:grid lg:grid-cols-3'>
+
+              <div className="py-[10%] px-[10%] md:px-[5%] lg:pl-[20%] col-span-2 bg-opcity-75"> 
+                <h2 className='pb-[10%] lg:pb-[5%] text-4xl md:text-5xl font-bold'>About Me</h2>
+                <p className='text-slate-50 text-xl md:text-3xl leading-tight md:leading-relaxed'>I am a passionate full-stack developer dedicated to creating visually appealing and user-centric web applications. I am eager to contribute my expertise to a dynamic team, fostering continuous learning and professional growth. I firmly believe that pushing our boundaries and embracing challenges with a positive and growth-oriented mindset is the key to honing our skills as developers.</p>
+              </div>
+          <div className='py-[5%] px-[5%] lg:py-[10%]  md:px-[5%] lg:pr-[20%] w-[65%]  lg:w-[100%] xl:w-[75%] m-auto flex justify-self-center items-center'>
+              <img className='grayscale hover:opacity-80' src={me} alt="" />
+          </div>
+          </div>
+        </div>  
     </div>
   )
 }
