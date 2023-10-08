@@ -8,8 +8,9 @@ function App() {
     <div className="text-slate-50">
     <Navbar />
     <Home /> 
-    <Projects />
     <About />
+    <Projects />
+    
     <Contact />
     </div>
   ) 
