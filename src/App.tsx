@@ -5,14 +5,13 @@ function App() {
 
 
   return (
-    <>
+    <div className="text-slate-50">
     <Navbar />
     <Home />
     <Projects />
-    
     <About />
     <Contact />
-    </>
+    </div>
   ) 
 }
 

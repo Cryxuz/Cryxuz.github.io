@@ -1,3 +1,3 @@
 <!-- pseudo -->
 
-opacity nav
+[x] Nav Opacity
