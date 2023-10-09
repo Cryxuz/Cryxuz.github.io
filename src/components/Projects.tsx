@@ -3,7 +3,7 @@ const Projects = () => {
   
   
   return (
-    <div className="sticky top-0 lg:bg-fixed bg-center bg-cover px-[10%]" style={{backgroundImage: `url(${about})`}} >
+    <div className="sticky top-0 xl:bg-fixed bg-center bg-cover px-[10%]" style={{backgroundImage: `url(${about})`}} >
       <div>
         <h2 className="py-[10%] font-extrabold text-[42px] md:text-[48px] text-center">Some of my latest work.</h2>
 
