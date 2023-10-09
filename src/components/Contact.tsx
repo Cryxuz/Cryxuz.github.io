@@ -60,9 +60,15 @@ export const Contact = () => {
           
             <label className="block text-slate-50 text-md font-bold mb-2">Message</label> 
             <textarea className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-slate-200" name="message" required/> <div className='flex justify-center m-[3%]'> 
-          <button className='bg-slate-700 p-[5px] rounded-lg border-emerald-500 border-[3px] hover:bg-emerald-400 hover:text-black' type="submit">Send Email</button>
+            <button className='bg-slate-700 p-[5px] rounded-lg border-emerald-500 border-[3px] hover:bg-emerald-400 hover:text-black' type="submit">Send Email</button>
+            <br />
+           
            </div>
-          {messageSent && <p className="text-green-500">Message Sent!</p>}
+           <div className='flex justify-center gap-[4%]'>
+            <a href="https://github.com/Cryxuz"><img src="/images/github.png" alt="" /></a>
+            <a href="https://www.linkedin.com/in/paul-david-tan-28b003266/"><img src="/images/linkedin.png" alt="" /></a>
+           </div>
+           {messageSent && <p className="text-green-500 block">Message Sent!</p>}
         </form>
       </div>
     </div>
