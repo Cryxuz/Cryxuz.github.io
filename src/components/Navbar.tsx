@@ -1,12 +1,49 @@
+import React from 'react';
+import { Link as ScrollLink } from 'react-scroll';
+
 const Navbar = () => {
   return (
     <div>
-      <div className="w-screen h-[100px] bg-slate-500 bg-opacity-50 fixed flex items-center justify-center lg:justify-start">
+      <div className="w-screen h-[100px] bg-transparent flex items-center justify-center lg:justify-start">
         <ul className="flex space-x-8 md:m-[2%] md:text-2xl">
-          <li><a href="">Home</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
+         
+            
+          <button>
+            <ScrollLink
+              activeClass="active"
+              to="projects"
+              
+              smooth={true}
+              offset={-70}
+              duration={2000}
+            >
+              Projects
+            </ScrollLink>
+          </button>
+          <button>
+            <ScrollLink
+              activeClass="active"
+              to="about"
+              
+              smooth={true}
+              offset={-70}
+              duration={2000}
+            >
+              About
+            </ScrollLink>
+          </button>
+          <button>
+            <ScrollLink
+              activeClass="active"
+              to="contact"
+             
+              smooth={true}
+              offset={-70}
+              duration={2000}
+            >
+              Contact
+            </ScrollLink>
+          </button>
         </ul>
       </div>
     </div>

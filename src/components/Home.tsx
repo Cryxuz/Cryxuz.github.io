@@ -1,10 +1,13 @@
+import { Navbar } from '.'
 import home from '../assets/home.jpg'
 
 const Home = () => {
   return (
     <div>
+      
       <div className="bg-fixed bg-center bg-cover text-center " style={{backgroundImage: `url(${home})`}}>
-      <div className="h-screen justify-center pt-[220px] md:pt-[190px]">
+      <Navbar />
+      <div className="h-screen justify-center pt-[90px] md:pt-[70px] lg:pt-[50px]">
         
           <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold '>Kia ora. I'm Paul.</h1>
           <br />

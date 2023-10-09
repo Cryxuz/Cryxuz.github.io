@@ -6,12 +6,11 @@ function App() {
 
   return (
     <div className="text-slate-50">
-    <Navbar />
-    <Home /> 
-    <About />
-    <Projects />
     
-    <Contact />
+    <div id="home"><Home /> </div>
+    <div id="about"><About /></div>
+    <div id="projects"><Projects /></div>
+    <div id="contact"><Contact /></div>
     </div>
   ) 
 }
