@@ -7,17 +7,17 @@ export const Contact = () => {
   const [messageSent, setMessageSent] = useState(false);
 
   const validatePhoneNumber = (value: string) => {
-    // Use a regular expression to check if the value contains only digits
+   
     return /^\d+$/.test(value);
   };
 
   const handlePhoneNumberChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    // Get the input value
+    
     const inputValue = e.target.value;
 
-    // Check if the input value is valid (contains only digits)
+    
     if (!validatePhoneNumber(inputValue)) {
-      // If it's not valid, clear the input value
+      
       e.target.value = '';
     }
   };

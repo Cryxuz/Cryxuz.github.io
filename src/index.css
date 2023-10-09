@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.grayscale:hover {
-  filter: none;
+body {
+  font-family: 'Itim', cursive;
+  font-family: 'Merriweather', serif;
 }

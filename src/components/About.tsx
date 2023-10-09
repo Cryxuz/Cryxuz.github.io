@@ -1,26 +1,34 @@
 import React, { useState, useEffect } from 'react';
-import about from '../assets/about.jpg'
-
+import about from '../assets/about.jpg';
 
 const About = () => {
   const [isImageVisible, setImageVisible] = useState(false);
   const scrollThreshold = 150;
-  
+
   useEffect(() => {
-    const handleScroll = () => {
+    const debounce = (func: TimerHandler, delay: number | undefined) => {
+      let timer: number | undefined;
+      return () => {
+        clearTimeout(timer);
+        timer = setTimeout(func, delay);
+      };
+    };
+
+    const handleScroll = debounce(() => {
       if (window.scrollY > scrollThreshold) {
         setImageVisible(true);
       }
-    };
-  
+    }, 100); 
+
     window.addEventListener('scroll', handleScroll);
-  
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
   return (
+    
     <div>
       <div className="bg-fixed bg-center bg-cover " style={{backgroundImage: `url(${about})`}}>
           <div className='lg:grid lg:grid-cols-3'>
