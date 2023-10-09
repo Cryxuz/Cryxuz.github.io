@@ -1,5 +1,5 @@
 import  Navbar  from './Navbar'
-import home from '../assets/home1.png'
+import home from '../assets/home1.jpg'
 
 const Home = () => {
   return (
