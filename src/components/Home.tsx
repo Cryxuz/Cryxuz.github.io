@@ -1,25 +1,9 @@
-import { useState, useEffect } from 'react';
+
 import Navbar from './Navbar';
 import home from '/images/home1.jpg';
 
 const Home = () => {
-  const [isH1Visible, setIsH1Visible] = useState(false);
-  const [isPVisible, setIsPVisible] = useState(false);
 
-  useEffect(() => {
-    const h1Timeout = setTimeout(() => {
-      setIsH1Visible(true);
-    }, 1800);
-
-    const pTimeout = setTimeout(() => {
-      setIsPVisible(true);
-    }, 1300);
-
-    return () => {
-      clearTimeout(h1Timeout);
-      clearTimeout(pTimeout);
-    };
-  }, []);
 
   return (
     <div>
@@ -30,17 +14,13 @@ const Home = () => {
         <Navbar />
         <div className="home h-screen justify-center pt-[40px] md:pt-[70px] lg:pt-[50px]">
           <h1
-            className={`text-4xl md:text-5xl lg:text-6xl font-extrabold ${
-              isH1Visible ? 'opacity-100 transition-opacity duration-1000' : 'opacity-0'
-            }`}
+            className={`text-4xl md:text-5xl lg:text-6xl font-extrabold`}
           >
             Kia ora. I'm Paul.
           </h1>
           <br />
           <p
-            className={`text-md md:text-2xl lg:text-3xl ${
-              isPVisible ? 'opacity-100 transition-opacity duration-1000' : 'opacity-0'
-            }`}
+            className={`text-md md:text-2xl lg:text-3xl `}
           >
             My goal is to provide users with memorable and efficient interactions.
           </p>
