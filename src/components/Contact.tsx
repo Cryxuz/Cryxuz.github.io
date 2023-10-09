@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import footer from '/images/footer.jpg';
-import footer_sm from '/images/footer-sm.jpg';
+
 
 export const Contact = () => {
   const form = useRef<HTMLFormElement | null>(null);
@@ -40,10 +40,10 @@ export const Contact = () => {
     }
   };
 
-  const screenWidth = window.innerWidth;
+
 
   return (
-    <div className="bg-fixed bg-center bg-cover flex items-center justify-center min-h-screen" style={{ backgroundImage: screenWidth >= 1024 ? `url(${footer})` : `url(${footer_sm})` }}>
+    <div className="bg-fixed bg-center bg-cover flex items-center justify-center min-h-screen" style={{ backgroundImage: `url(${footer})` }}>
       <div className="container max-w-4xl bg-slate-700 bg-opacity-30 p-5 mx-5 sm:mt-[100px] sm:mx-[100px] md:p-20 rounded-xl">
         <h2 className="text-slate-50 font-extrabold text-3xl md:text-[44px] pb-[20px]">Contact Me</h2>
         <form ref={form} onSubmit={sendEmail}>
