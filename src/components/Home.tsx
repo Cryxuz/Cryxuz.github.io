@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import home from '/images/home1.jpg';
 
@@ -9,11 +9,11 @@ const Home = () => {
   useEffect(() => {
     const h1Timeout = setTimeout(() => {
       setIsH1Visible(true);
-    }, 800);
+    }, 1800);
 
     const pTimeout = setTimeout(() => {
       setIsPVisible(true);
-    }, 1800);
+    }, 1300);
 
     return () => {
       clearTimeout(h1Timeout);
