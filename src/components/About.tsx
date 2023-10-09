@@ -49,7 +49,7 @@ const About = () => {
                   />
                   </div>
 
-                  <div className="absolute top-5 right-0 sm:top-5 sm:right-[20%] lg:top-[50%]">
+                  <div className="absolute top-[40%] right-[15%] sm:top-5 sm:right-[20%] lg:top-[50%]">
                     <img
                       src="/images/2.jpg"
                       alt="Image 2"
@@ -69,7 +69,7 @@ const About = () => {
                   />
                   </div>
 
-                  <div className="absolute top-15 right-0 sm:top-[25%] sm:right-[35%] lg:top-[100%] 2xl:top-[95%] 2xl:right-[30%]">
+                  <div className="absolute top-15 right-[3%] sm:top-[25%] sm:right-[35%] lg:top-[100%] 2xl:top-[95%] 2xl:right-[30%]">
                     <img
                       src="/images/4.jpg"
                       alt="Image 4"
