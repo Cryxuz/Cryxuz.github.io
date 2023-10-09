@@ -42,7 +42,7 @@ export const Contact = () => {
 
   
   return (
-    <div className="sticky top-0  xl:bg-fixed bg-center bg-cover flex items-center justify-center w-screen min-h-screen py-[5%]" style={{ backgroundImage: `url(${footer})` }}>
+    <div className="sticky top-0 xl:bg-fixed bg-center bg-cover flex items-center justify-center w-screen min-h-screen py-[5%]" style={{ backgroundImage: `url(${footer})` }}>
       <div className="container max-w-4xl bg-slate-700 bg-opacity-30 p-5 mx-5 sm:mt-[100px] sm:mx-[100px] md:p-20 rounded-xl">
         <h2 className="text-slate-50 font-extrabold text-3xl md:text-[44px] pb-[20px]">Contact Me</h2>
         <form ref={form} onSubmit={sendEmail}>
