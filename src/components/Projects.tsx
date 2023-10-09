@@ -9,7 +9,7 @@ const Projects = () => {
             <img className="rounded-xl w-[80%]" src="src/assets/todo.png" alt="" />
           </div>
           <div>
-          <h2 className="text-4xl md:text-[40px] font-semibold">Todo List</h2>
+          <h2 className="text-4xl md:text-[40px] font-semibold hover:text-emerald-400"><a href="http://paul-tan-to-do-list.devacademy.nz/" target="_blank">Todo List</a></h2>
           <br />
             <p className="md:text-2xl">Introducing my user-friendly todo list, designed to effortlessly assist you in managing your daily tasks and priorities, so you can stay organized and boost your productivity with ease.</p>
             <br />
@@ -31,7 +31,7 @@ const Projects = () => {
           <div>
             <img className="rounded-xl w-[80%] block md:hidden" src="src/assets/donut.png" alt="" />
           </div>
-          <h2 className="text-4xl md:text-[40px] font-semibold">Tiffs Donut <span className="text-2xl">(Group Project)</span></h2>
+          <h2 className="text-4xl md:text-[40px] font-semibold hover:text-emerald-400"><a href="https://tiffs-donuts.devacademy.nz/" target="_blank">Tiffs Donut <span className="text-2xl">(Group Project)</span></a></h2>
           <br />
             <p className="md:text-2xl">
               This donut shop group project primarily centers around the acquisition and application of skills related to threeJS and tailwind, with a strong emphasis on learning and practical application. </p>

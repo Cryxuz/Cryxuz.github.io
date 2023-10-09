@@ -64,9 +64,9 @@ export const Contact = () => {
             <br />
            
            </div>
-           <div className='flex justify-center gap-[4%]'>
-            <a href="https://github.com/Cryxuz"><img src="/images/github.png" alt="" /></a>
-            <a href="https://www.linkedin.com/in/paul-david-tan-28b003266/"><img src="/images/linkedin.png" alt="" /></a>
+           <div className='flex justify-center gap-[4%] pt-[5%] md:pt-[1%]'>
+            <a href="https://github.com/Cryxuz" target="_blank" ><img  className="w-[70%] md:w-[100%]" src="/images/github.png" alt="" /></a>
+            <a href="https://www.linkedin.com/in/paul-david-tan-28b003266/" target="_blank" ><img className="w-[70%] md:w-[100%]" src="/images/linkedin.png" alt="" /></a>
            </div>
            {messageSent && <p className="text-green-500 block">Message Sent!</p>}
         </form>
