@@ -1,5 +1,5 @@
 import  { useState, useEffect } from 'react';
-import about from '../assets/about.jpg';
+import about from '../assets/about.png';
 
 const About = () => {
   const [isImageVisible, setImageVisible] = useState(false);

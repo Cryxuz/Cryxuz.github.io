@@ -1,4 +1,4 @@
-import about from '../assets/about.jpg';
+import about from '../assets/about.png';
 const Projects = () => {
   return (
     <div className="bg-fixed bg-center bg-cover px-[10%] "style={{backgroundImage: `url(${about})`}} >

@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
-import footer from '../assets/footer.jpg';
+import footer from '../assets/footer.png';
 
 export const Contact = () => {
   const form = useRef<HTMLFormElement | null>(null);
