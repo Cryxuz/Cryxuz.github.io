@@ -1,25 +1,45 @@
-// import React, { useRef } from 'react';
+
 import footer from '../assets/footer.jpg';
 
 
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com'; // Import the 'emailjs-com' library
 
 export const Contact = () => {
+
+  const [user, setUser] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+
   const form = useRef<HTMLFormElement | null>(null);
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (form.current) {
-      emailjs.sendForm('service_zgc3dhi', 'template_gjigj6d', form.current, '9Me4x8u4wtwuLriqU')
+    const serviceId = 'service_zgc3dhi'
+    const templateId = 'template_gjigj6d'
+    const publicKey = '9Me4x8u4wtwuLriqU'
+
+    const templateParams = {
+      form_user: user,
+      form_email: email,
+      to_name: 'Paul T',
+      message: message,
+
+    }
+
+    
+      emailjs.sendForm(`${serviceId}`, `${templateId}`, `${templateParams}`, `${publicKey}`)
         .then((result) => {
-          console.log(result.text);
+          console.log('Email sent successfully', result);
+          setUser('')
+          setEmail('')
+          setMessage('')
         })
         .catch((error) => {
-          console.log(error.text);
+          console.log('Error sending message', error);
         });
-    }
+    
   };
 
   return (
@@ -28,14 +48,15 @@ export const Contact = () => {
         <h2 className="text-slate-50 font-extrabold text-3xl md:text-[44px] pb-[20px]">Contact Me</h2>
             <form ref={form} onSubmit={sendEmail}>
               <label className="block text-slate-50 text-md font-bold mb-2" >Name</label>
-              <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-slate-200" type="text" name="user_name" />
+              <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-slate-200" value={user} type="text" name="user_name" onChange={(e) => setUser(e.target.value)} />
               
               <label className="block text-slate-50 text-md font-bold mb-2" >Email</label>
-              <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-slate-200" type="email" name="user_email" />
+              <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-slate-200" value={email} type="email" name="user_email" onChange={(e) => setEmail(e.target.value)} />
               
               <label className="block text-slate-50 text-md font-bold mb-2">Message</label>
-              <textarea className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-slate-200" name="message" />
-              <input type="submit" value="Send" />
+              <textarea className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-slate-200" value={message} name="message" onChange={(e) => setMessage(e.target.value)} />
+              
+              <button type="submit">Send Email</button>
             </form>
       </div>
     </div>
