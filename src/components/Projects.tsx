@@ -1,9 +1,10 @@
+import about from '../assets/about.jpg';
 const Projects = () => {
   return (
-    <div className='bg-gradient-to-r from-slate-900 via-slate-500 to-slate-900 px-[10%] bg-opacity-90'>
+    <div className="bg-fixed bg-center bg-cover px-[10%] " style={{backgroundImage: `url(${about})`}}>
       <div>
         <h2 className="py-[10%] font-extrabold text-[42px] md:text-[48px] text-center">Some of my latest work.</h2>
-{/*  */}
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[10%] pb-[10%]">
           <div>
             <img className="rounded-xl w-[80%]" src="src/assets/todo.png" alt="" />
@@ -25,7 +26,7 @@ const Projects = () => {
             </ul>
           </div>
         </div>
-{/*  */}
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[10%] pb-[10%]">
           <div>
           <div>
