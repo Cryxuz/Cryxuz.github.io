@@ -3,7 +3,7 @@ const Projects = () => {
   
   
   return (
-    <div className={`w-screen bg-fixed bg-center bg-cover px-[10%] ${window.innerWidth <= 768 ? 'bg-scale-down' : ''}`} style={{backgroundImage: `url(${about})`}}>
+    <div className={`w-screen bg-fixed bg-center bg-cover px-[10%]  ${window.innerWidth <= 768 ? 'bg-scale-down' : ''}`} style={{backgroundImage: `url(${about})`}}>
       <div>
         <h2 className="py-[10%] font-extrabold text-[42px] md:text-[48px] text-center">Some of my latest work.</h2>
 
