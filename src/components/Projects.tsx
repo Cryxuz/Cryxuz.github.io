@@ -1,9 +1,9 @@
-import about from '/images/about.jpg';
+import minimal from '/images/minimal.jpg';
 const Projects = () => {
   
   
   return (
-    <div className="sticky top-0 xl:bg-fixed bg-center bg-cover px-[10%]" style={{backgroundImage: `url(${about})`}} >
+    <div className="sticky top-0 xl:bg-fixed bg-center bg-cover px-[10%]" style={{backgroundImage: `url(${minimal})`}} >
       <div>
         <h2 className="py-[10%] font-extrabold text-[42px] md:text-[48px] text-center">Some of my latest work.</h2>
 
