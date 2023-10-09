@@ -1,4 +1,4 @@
-import { Navbar } from '.'
+import  Navbar  from './Navbar'
 import home from '../assets/home.jpg'
 
 const Home = () => {
