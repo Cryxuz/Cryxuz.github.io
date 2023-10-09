@@ -18,7 +18,7 @@ const About = () => {
       if (window.scrollY > scrollThreshold) {
         setImageVisible(true);
       }
-    }, 100); 
+    }, 0); 
 
     window.addEventListener('scroll', handleScroll);
 

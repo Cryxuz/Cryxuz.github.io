@@ -7,7 +7,7 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[10%] pb-[10%]">
           <div>
-            <img className="rounded-xl w-[80%]" src="src/assets/todo.png" alt="" />
+            <img className="rounded-xl w-[80%]" src="images/todo.png" alt="" />
           </div>
           <div>
           <h2 className="text-4xl md:text-[40px] font-semibold hover:text-emerald-400"><a href="http://paul-tan-to-do-list.devacademy.nz/" target="_blank">Todo List</a></h2>
@@ -30,7 +30,7 @@ const Projects = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[10%] pb-[10%]">
           <div>
           <div>
-            <img className="rounded-xl w-[80%] block md:hidden" src="src/assets/donut.png" alt="" />
+            <img className="rounded-xl w-[80%] block md:hidden m-[5%]" src="/images/donut.png" alt="" />
           </div>
           <h2 className="text-4xl md:text-[40px] font-semibold hover:text-emerald-400"><a href="https://tiffs-donuts.devacademy.nz/" target="_blank">Tiffs Donut <span className="text-2xl">(Group Project)</span></a></h2>
           <br />
@@ -51,7 +51,7 @@ const Projects = () => {
             </ul>
           </div>
           <div>
-            <img className="rounded-xl w-[80%] hidden md:block" src="src/assets/donut.png" alt="" />
+            <img className="rounded-xl  hidden md:block" src="images/donut.png" alt="" />
           </div>
         </div>
       </div>
