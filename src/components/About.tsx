@@ -30,7 +30,7 @@ const About = () => {
   return (
     
     <div>
-      <div className="bg-fixed bg-center bg-cover" style={{backgroundImage: `url(${about})`}} >
+      <div className="bg-fixed bg-auto bg-center md:bg-cover" style={{backgroundImage: `url(${about})`}} >
           <div className='lg:grid lg:grid-cols-3'>
               <div className='py-[10%] px-[10%] md:px-[5%] lg:pl-[20%] col-span-2 bg-opcity-75'>
                 <h2 className='pb-[10%] lg:pb-[5%] text-4xl md:text-5xl font-bold'>About Me</h2>
@@ -59,7 +59,7 @@ const About = () => {
                     />
                   </div>
 
-                  <div className="absolute top-5 left-[20%] sm:top-[0%] sm:left-[13%] lg:left-[5%] lg:top-[90%] 2xl:top-[100%]">
+                  <div className="absolute top-5 left-[30%] sm:top-[0%] sm:left-[13%] lg:left-[5%] lg:top-[90%] 2xl:top-[100%]">
                   <img
                     src="/images/3.jpg"
                     alt="Image 3"
