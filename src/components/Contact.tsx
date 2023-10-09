@@ -13,10 +13,27 @@ const Contact = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Add your form submission logic here
     console.log(formData);
+  
+    try {
+      const response = await fetch('/your-api-endpoint', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      if (response.ok) {
+        // Handle a successful response here
+      } else {
+        // Handle errors here
+      }
+    } catch (error) {
+      // Handle network errors here
+    }
   };
 
   return (
