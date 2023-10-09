@@ -7,3 +7,8 @@ body {
   font-family: 'Merriweather', serif;
 }
 
+@media (max-width: 768px) {
+  .bg-scale-down {
+    background-size: 50%; /* Scale down the background image to 50% only on screens with a maximum width of 768px (adjust the breakpoint as needed) */
+  }
+}
