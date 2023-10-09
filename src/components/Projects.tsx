@@ -5,9 +5,9 @@ const Projects = () => {
   return (
     <div className="sticky top-0 xl:bg-fixed bg-center bg-cover px-[10%] " style={{backgroundImage: `url(${minimal})`}} >
       <div>
-        <h2 className="py-[10%] font-extrabold text-[42px] md:text-[48px] text-center">Some of my latest work.</h2>
+        <h2 className="py-[5%] font-extrabold text-[42px] md:text-[48px] text-center">Some of my latest work.</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-[10%] pb-[10%] pt-[10%]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-[10%] py-[5%]">
           <div>
             <img className="rounded-xl w-[80%]" src="images/todo.png" alt="" />
           </div>
@@ -29,7 +29,7 @@ const Projects = () => {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-[10%] pb-[10%] pt-[10%]  ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-[10%] py-[5%]">
             <div>
               <div>
                 <img className="rounded-xl w-[80%] block md:hidden my-[14%]" src="/images/donut.png" alt="" />
