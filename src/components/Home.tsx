@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div>
       
-      <div className=" bg-fixed bg-center bg-cover text-center w-fit" style={{backgroundImage: `url(${home})`}}>
+      <div className=" bg-fixed bg-center bg-cover text-center w-full md:w-screen" style={{backgroundImage: `url(${home})`}}>
       <Navbar />
       <div className="h-screen justify-center pt-[90px] md:pt-[70px] lg:pt-[50px]">
         
