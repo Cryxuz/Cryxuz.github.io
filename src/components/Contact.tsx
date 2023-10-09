@@ -40,10 +40,9 @@ export const Contact = () => {
     }
   };
 
-
-
+  
   return (
-    <div className="sticky top-0  xl:bg-fixed bg-center bg-cover flex items-center justify-center w-screen " style={{ backgroundImage: `url(${footer})` }}>
+    <div className="sticky top-0  xl:bg-fixed bg-center bg-cover flex items-center justify-center w-screen h-screen py-[5%]" style={{ backgroundImage: `url(${footer})` }}>
       <div className="container max-w-4xl bg-slate-700 bg-opacity-30 p-5 mx-5 sm:mt-[100px] sm:mx-[100px] md:p-20 rounded-xl">
         <h2 className="text-slate-50 font-extrabold text-3xl md:text-[44px] pb-[20px]">Contact Me</h2>
         <form ref={form} onSubmit={sendEmail}>
@@ -73,7 +72,13 @@ export const Contact = () => {
            </div>
            {messageSent && <p className="text-green-500 block">Message Sent!</p>}
         </form>
+        <div className='p-[20px] text-center'>
+        <p className='text-xs'>Images from Unsplash & FreePik. Icons from FlatIcon</p>
+        <p className='text-sm'>© Copyright 2023. Paul David Tan. All rights reserved. </p>
+        </div>
       </div>
+      
+      
     </div>
   );
 };
