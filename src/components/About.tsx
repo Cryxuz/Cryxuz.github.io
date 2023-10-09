@@ -39,36 +39,7 @@ const About = () => {
               
                 <div className="relative h-80">
                   
-                  <div className="absolute top-0 left-0 sm:top-[10%] sm:left-[25%] lg:left-[10%] lg:top-[45%]">
-                  <img
-                    src="/images/1.jpg"
-                    alt="Image 1"
-                    className={`border-[3px] h-60 w-52 2xl:w-80 2xl:h-80 object-cover rounded-lg shadow-md transform -rotate-6 ${
-                      isImageVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-20' 
-                    } ease-in-out duration-[1500ms]`}
-                  />
-                  </div>
-
-                  <div className="absolute top-[40%] right-[15%] sm:top-5 sm:right-[20%] lg:top-[50%]">
-                    <img
-                      src="/images/2.jpg"
-                      alt="Image 2"
-                      className={`border-[3px] w-[200px] h-[150px] 2xl:w-52 2xl:h-52 object-cover rounded-lg shadow-md transform rotate-12 ${
-                        isImageVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-20'
-                      }  ease-in-out duration-[3000ms]`}
-                    />
-                  </div>
-
-                  <div className="absolute top-5 left-[30%] sm:top-[0%] sm:left-[13%] lg:left-[5%] lg:top-[90%] 2xl:top-[100%]">
-                  <img
-                    src="/images/3.jpg"
-                    alt="Image 3"
-                    className={`border-[3px] w-[180px] h-36 2xl:w-52 2xl:h-52 object-cover rounded-lg shadow-md transform -rotate-12 ${
-                      isImageVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-20'
-                    } ease-in-out duration-[3000ms]`}
-                  />
-                  </div>
-
+                  
                   <div className="absolute top-15 right-[3%] sm:top-[25%] sm:right-[35%] lg:top-[100%] 2xl:top-[95%] 2xl:right-[30%]">
                     <img
                       src="/images/4.jpg"
