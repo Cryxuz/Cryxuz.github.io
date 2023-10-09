@@ -1,7 +1,7 @@
 import about from '/images/about.jpg';
 const Projects = () => {
   return (
-    <div className="bg-fixed bg-center bg-cover px-[10%] "style={{backgroundImage: `url(${about})`}} >
+    <div className="w-screen bg-fixed bg-center bg-cover px-[10%] scale-50 md:scale-100" style={{backgroundImage: `url(${about})`}} >
       <div>
         <h2 className="py-[10%] font-extrabold text-[42px] md:text-[48px] text-center">Some of my latest work.</h2>
 
