@@ -30,7 +30,7 @@ const About = () => {
   return (
     
     <div>
-      <div className="bg-fixed bg-center bg-cover" style={{backgroundImage: `url(${about})`}} >
+      <div className="sticky top-0 lg:bg-fixed bg-center bg-cover" style={{backgroundImage: `url(${about})`}} >
           <div className='lg:grid lg:grid-cols-3'>
               <div className='py-[10%] px-[10%] md:px-[5%] lg:pl-[20%] col-span-2 bg-opcity-75'>
                 <h2 className='pb-[10%] lg:pb-[5%] text-4xl md:text-5xl font-bold'>About Me</h2>

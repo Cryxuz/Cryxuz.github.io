@@ -11,18 +11,6 @@ const Navbar = () => {
           <button>
             <ScrollLink
               activeClass="active"
-              to="projects"
-              
-              smooth={true}
-              offset={-70}
-              duration={2000}
-            >
-              Projects
-            </ScrollLink>
-          </button>
-          <button>
-            <ScrollLink
-              activeClass="active"
               to="about"
               
               smooth={true}
@@ -30,6 +18,18 @@ const Navbar = () => {
               duration={2000}
             >
               About
+            </ScrollLink>
+          </button>
+          <button>
+            <ScrollLink
+              activeClass="active"
+              to="projects"
+              
+              smooth={true}
+              offset={-70}
+              duration={2000}
+            >
+              Projects
             </ScrollLink>
           </button>
           <button>
