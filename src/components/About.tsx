@@ -35,6 +35,9 @@ const About = () => {
               <div className='py-[10%] px-[10%] md:px-[5%] lg:pl-[20%] col-span-2 '>
                 <h2 className='pb-[10%] lg:pb-[5%] text-4xl md:text-5xl font-bold'>About Me</h2>
                 <p className='text-slate-50 text-xl md:text-3xl leading-tight md:leading-relaxed '>I am a passionate full-stack developer dedicated to creating visually appealing and user-centric web applications. I am eager to contribute my expertise to a dynamic team, fostering continuous learning and professional growth. I firmly believe that pushing our boundaries and embracing challenges with a positive and growth-oriented mindset is the key to honing our skills as developers.</p>
+                <button className="bg-emerald-500 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded-lg mt-5">
+                    <a target='_blank' rel="noopener noreferrer" href="https://drive.google.com/file/d/1Ggh9h-LL0k0Xquf2y79R6yATg84BYVqq/view?usp=sharing">Download CV</a>
+                </button>
               </div>
               
                 <div className="relative h-80">

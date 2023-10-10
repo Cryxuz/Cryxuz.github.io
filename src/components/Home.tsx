@@ -24,7 +24,9 @@ const Home = () => {
           >
             My goal is to provide users with memorable and efficient interactions.
           </p>
+          
         </div>
+        
       </div>
     </div>
   );

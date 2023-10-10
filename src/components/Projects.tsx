@@ -6,11 +6,12 @@ const Projects = () => {
     <div className="sticky top-0 xl:bg-fixed bg-center bg-cover px-[10%] " style={{backgroundImage: `url(${minimal})`}} >
       <div>
         <h2 className="py-[5%] font-extrabold text-[42px] md:text-[48px] text-center">Some of my latest work.</h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-[10%] py-[5%]">
+          {/* TODO Project */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-[10%] py-[5%]">
           <div>
-            <img className="rounded-xl w-[80%]" src="images/todo.png" alt="" />
+           <a href="http://paul-tan-to-do-list.devacademy.nz/"><img className="rounded-xl w-[80%]" src="images/todo.png" alt="" /></a> 
           </div>
+          
           <div>
           <h2 className="text-4xl md:text-[40px] font-semibold hover:text-emerald-400"><a href="http://paul-tan-to-do-list.devacademy.nz/" target="_blank">Todo List</a></h2>
           <br />
@@ -28,12 +29,15 @@ const Projects = () => {
             </ul>
           </div>
         </div>
-        
+        {/* END */}
+        {/* TIFFs Donut Project */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[10%] py-[5%]">
             <div>
+              {/* hidden md */}
               <div>
-                <img className="rounded-xl w-[80%] block md:hidden my-[14%]" src="/images/donut.png" alt="" />
+               <a href="https://tiffs-donuts.devacademy.nz/"><img className="rounded-xl w-[80%] block md:hidden my-[14%]" src="/images/donut.png" alt="" /></a> 
               </div>
+              {/*  */}
               <h2 className="text-4xl md:text-[40px] font-semibold hover:text-emerald-400"><a href="https://tiffs-donuts.devacademy.nz/" target="_blank">Tiffs Donut <span className="text-2xl">(Group Project)</span></a></h2>
               <br />
                 <p className="md:text-2xl">
@@ -52,9 +56,11 @@ const Projects = () => {
                   <li className="bg-green-500 rounded-full py-1 px-3 text-white">▷ TailwindCSS</li>
                 </ul>
               </div>
+              {/* hidden 0px */}
               <div>
-                <img className="rounded-xl hidden md:block" src="images/donut.png" alt="" />
+               <a href="https://tiffs-donuts.devacademy.nz/"><img className="rounded-xl hidden md:block" src="images/donut.png" alt="" /></a> 
               </div>
+              {/*  */}
             </div>
       </div>
     </div>
