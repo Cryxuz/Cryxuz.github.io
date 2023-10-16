@@ -6,7 +6,7 @@ import { motion, useAnimation } from 'framer-motion';
 
 const About = () => {
   const [, setImageVisible] = useState(false);
-  const scrollThreshold = 150; // Define the scroll threshold
+  const scrollThreshold = 150; 
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -68,14 +68,14 @@ const About = () => {
             animate={{ opacity: isVisible ? 1 : 0 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 2.5 }}
-            className="pb-[10%] lg:pb-[5%] text-4xl md:text-5xl font-bold">About Me</motion.h2>
+            className="mx-auto pb-[10%] lg:pb-[5%] text-4xl md:text-5xl font-bold">About Me</motion.h2>
             <motion.p 
             initial={{ opacity: 0 }}
             animate={{ opacity: isVisible ? 1 : 0 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 3.5 }}
 
-            className="text-slate-50 text-xl md:text-3xl leading-tight md:leading-relaxed">
+            className="mx-auto text-slate-50 text-xl md:text-3xl leading-tight md:leading-relaxed">
               I am a passionate full-stack developer dedicated to creating visually appealing and
               user-centric web applications. I am eager to contribute my expertise to a dynamic team,
               fostering continuous learning and professional growth. I firmly believe that pushing our
@@ -94,7 +94,7 @@ const About = () => {
           </motion.div>
 
            <div className="relative h-80">
-                  {/* first image from left */}
+                  
                 <motion.div
                   initial={{ x: -500 }}
                   animate={left}
@@ -106,7 +106,7 @@ const About = () => {
                     className={`border-[3px] h-60 w-52 2xl:w-80 2xl:h-80 object-cover rounded-lg shadow-md transform -rotate-6 `}
                   />
                 </motion.div>
-                  {/* second image from right */}
+                  
                 <motion.div
                   initial={{ x: 500 }}
                   animate={right}
@@ -118,7 +118,7 @@ const About = () => {
                       className={`border-[3px] w-[200px] h-[150px] 2xl:w-52 2xl:h-52 object-cover rounded-lg shadow-md transform rotate-12`}
                     />
                   </motion.div>
-                  {/* third image from left */}
+                  
                 <motion.div
                   initial={{ x: -500 }}
                   animate={right}
@@ -130,7 +130,7 @@ const About = () => {
                     className={`border-[3px] w-[180px] h-36 2xl:w-52 2xl:h-52 object-cover rounded-lg shadow-md transform -rotate-12 `}
                   />
                   </motion.div>
-                  {/* fourth image from bottom */}
+                 
                 <motion.div
                   initial={{ x: 500 }}
                   animate={right}
