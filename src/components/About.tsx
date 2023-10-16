@@ -61,21 +61,21 @@ const About = () => {
         <div className="lg:grid lg:grid-cols-3">
            <motion.div
             
-            className="py-[10%] px-[10%] md:px-[5%] lg:pl-[20%] col-span-2"
+            className="mx-auto py-[10%] px-[10%] md:px-[5%] lg:pl-[20%] col-span-2"
           >
             <motion.h2 
             initial={{ opacity: 0 }}
             animate={{ opacity: isVisible ? 1 : 0 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 2.5 }}
-            className="mx-auto pb-[10%] lg:pb-[5%] text-4xl md:text-5xl font-bold">About Me</motion.h2>
+            className=" pb-[10%] lg:pb-[5%] text-4xl md:text-5xl font-bold">About Me</motion.h2>
             <motion.p 
             initial={{ opacity: 0 }}
             animate={{ opacity: isVisible ? 1 : 0 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 3.5 }}
 
-            className="mx-auto text-slate-50 text-xl md:text-3xl leading-tight md:leading-relaxed">
+            className=" text-slate-50 text-xl md:text-3xl leading-tight md:leading-relaxed">
               I am a passionate full-stack developer dedicated to creating visually appealing and
               user-centric web applications. I am eager to contribute my expertise to a dynamic team,
               fostering continuous learning and professional growth. I firmly believe that pushing our
@@ -139,7 +139,7 @@ const About = () => {
                     <img
                       src="/images/4.jpg"
                       alt="Image 4"
-                      className={`border-[3px]  w-32 h-32 md:w-40 md:h-52 2xl:w-60 2xl:h-60 object-cover rounded-lg shadow-md 2xl:transform 2xl:rotate-6 `}
+                      className={`border-[3px]  w-[150px] h-32 md:w-40 md:h-52 2xl:w-60 2xl:h-60 object-cover rounded-lg shadow-md 2xl:transform 2xl:rotate-6 `}
                     />
                   </motion.div>
 

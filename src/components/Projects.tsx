@@ -13,9 +13,9 @@ const Projects = () => {
                <a href="https://ember-bistro.netlify.app/" target='_blank'><img className="mx-auto rounded-xl w-[80%] block md:hidden my-[14%]" src="/images/ember.jpg" alt="ember restaurant" /></a> 
               </div>
               {/*  */}
-              <h2 className="text-4xl md:text-[40px] font-semibold hover:text-emerald-400"><a href="https://ember-bistro.netlify.app/" target="_blank">Ember Bistro <span className="text-2xl">(Pair Programming)</span></a></h2>
+              <h2 className="text-center lg:text-left text-4xl md:text-[40px] font-semibold hover:text-emerald-400"><a href="https://ember-bistro.netlify.app/" target="_blank">Ember Bistro <span className="text-2xl">(Pair Programming)</span></a></h2>
               <br />
-                <p className="md:text-2xl">
+                <p className="md:text-2xl lg:text-left text-center ">
                 This restaurant project primarily emphasizes front-end development, reservation management, and the secure storage of reservation data in the database. </p>
                 <br /> 
                 <ul className="hidden lg:flex flex-wrap items-center space-x-2 gap-[5px]">
@@ -43,9 +43,9 @@ const Projects = () => {
           </div>
           
           <div>
-          <h2 className="text-4xl md:text-[40px] font-semibold hover:text-emerald-400"><a href="http://paul-tan-to-do-list.devacademy.nz/" target="_blank">Todo List</a></h2>
+          <h2 className="text-center lg:text-left text-4xl md:text-[40px] font-semibold hover:text-emerald-400"><a href="http://paul-tan-to-do-list.devacademy.nz/" target="_blank">Todo List</a></h2>
           <br />
-            <p className="md:text-2xl">Introducing my user-friendly todo list, designed to effortlessly assist you in managing your daily tasks and priorities, so you can stay organized and boost your productivity with ease.</p>
+            <p className="text-center  lg:text-left md:text-2xl">Introducing my user-friendly todo list, designed to effortlessly assist you in managing your daily tasks and priorities, so you can stay organized and boost your productivity with ease.</p>
             <br />
             <ul className="hidden lg:flex flex-wrap items-center space-x-2 gap-[5px]">
               <li className="bg-green-500 rounded-full py-1 px-3 text-white">▷ HTML</li>
@@ -68,9 +68,9 @@ const Projects = () => {
                <a href="https://tiffs-donuts.devacademy.nz/" target='_blank'><img className="mx-auto rounded-xl w-[80%] block md:hidden my-[14%]" src="/images/donut.jpg" alt="donut homepage" /></a> 
               </div>
               {/*  */}
-              <h2 className="text-4xl md:text-[40px] font-semibold hover:text-emerald-400"><a href="https://tiffs-donuts.devacademy.nz/" target="_blank">Tiffs Donut <span className="text-2xl">(Group Project)</span></a></h2>
+              <h2 className="text-center lg:text-left text-4xl md:text-[40px] font-semibold hover:text-emerald-400"><a href="https://tiffs-donuts.devacademy.nz/" target="_blank">Tiffs Donut <span className="text-2xl">(Group Project)</span></a></h2>
               <br />
-                <p className="md:text-2xl">
+                <p className="text-center lg:text-left md:text-2xl">
                   This donut shop group project primarily centers around the acquisition and application of skills related to threeJS and tailwind, with a strong emphasis on learning and practical application. </p>
                 <br /> 
                 <ul className="hidden lg:flex flex-wrap items-center space-x-2 gap-[5px]">
