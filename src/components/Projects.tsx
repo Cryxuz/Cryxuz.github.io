@@ -10,7 +10,7 @@ const Projects = () => {
             <div>
               {/* hidden md */}
               <div>
-               <a href="https://ember-bistro.netlify.app/"><img className="rounded-xl w-[80%] block md:hidden my-[14%]" src="/images/ember.png" alt="ember restaurant" /></a> 
+               <a href="https://ember-bistro.netlify.app/"><img className="rounded-xl w-[80%] block md:hidden my-[14%]" src="/images/ember.jpg" alt="ember restaurant" /></a> 
               </div>
               {/*  */}
               <h2 className="text-4xl md:text-[40px] font-semibold hover:text-emerald-400"><a href="https://ember-bistro.netlify.app/" target="_blank">Ember Bistro <span className="text-2xl">(Pair Programming)</span></a></h2>
@@ -32,14 +32,14 @@ const Projects = () => {
               </div>
               {/* hidden 0px */}
               <div>
-               <a href="https://tiffs-donuts.devacademy.nz/"><img className="rounded-xl hidden md:block" src="images/ember.png" alt="ember restaurant" /></a> 
+               <a href="https://ember-bistro.netlify.app/"><img className="rounded-xl hidden md:block" src="images/ember.jpg" alt="ember restaurant" /></a> 
               </div>
               {/*  */}
             </div>
           {/* TODO Project */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-[10%] py-[5%]">
           <div>
-           <a href="http://paul-tan-to-do-list.devacademy.nz/"><img className="rounded-xl w-[80%]" src="images/todo.png" alt="todo project" /></a> 
+           <a href="http://paul-tan-to-do-list.devacademy.nz/"><img className="rounded-xl w-[80%]" src="images/todo.jpg" alt="todo project" /></a> 
           </div>
           
           <div>
@@ -65,7 +65,7 @@ const Projects = () => {
             <div>
               {/* hidden md */}
               <div>
-               <a href="https://tiffs-donuts.devacademy.nz/"><img className="rounded-xl w-[80%] block md:hidden my-[14%]" src="/images/donut.png" alt="donut homepage" /></a> 
+               <a href="https://tiffs-donuts.devacademy.nz/"><img className="rounded-xl w-[80%] block md:hidden my-[14%]" src="/images/donut.jpg" alt="donut homepage" /></a> 
               </div>
               {/*  */}
               <h2 className="text-4xl md:text-[40px] font-semibold hover:text-emerald-400"><a href="https://tiffs-donuts.devacademy.nz/" target="_blank">Tiffs Donut <span className="text-2xl">(Group Project)</span></a></h2>
@@ -88,7 +88,7 @@ const Projects = () => {
               </div>
               {/* hidden 0px */}
               <div>
-               <a href="https://tiffs-donuts.devacademy.nz/"><img className="rounded-xl hidden md:block" src="images/donut.png" alt="donut homepage" /></a> 
+               <a href="https://tiffs-donuts.devacademy.nz/"><img className="rounded-xl hidden md:block" src="images/donut.jpg" alt="donut homepage" /></a> 
               </div>
               {/*  */}
             </div>
