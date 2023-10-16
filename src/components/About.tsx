@@ -1,92 +1,154 @@
-import  { useState, useEffect } from 'react';
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import { useState, useEffect } from 'react';
 import about from '/images/about.jpg';
+import { motion, useAnimation } from 'framer-motion';
+
 
 const About = () => {
   const [isImageVisible, setImageVisible] = useState(false);
-  const scrollThreshold = 150;
+  const scrollThreshold = 150; // Define the scroll threshold
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const debounce = (func: TimerHandler, delay: number | undefined) => {
-      let timer: number | undefined;
-      return () => {
-        clearTimeout(timer);
-        timer = setTimeout(func, delay);
-      };
-    };
+    setIsVisible(false);
+  }, []);
 
-    const handleScroll = debounce(() => {
+  
+  const debounce = (func, delay:number) => {
+    let timer:number;
+    return () => {
+      clearTimeout(timer);
+      timer = setTimeout(func, delay);
+    };
+  };
+
+  const { left, right } = {
+    left: useAnimation(),
+    right: useAnimation(),
+
+  };
+
+  useEffect(() => {
+    const handleScroll = debounce(async () => {
       if (window.scrollY > scrollThreshold) {
-        setImageVisible(true);
+        setImageVisible(true); 
+        setIsVisible(true)
+        await left.start({ x: 0 });
+      }  if (window.scrollY > scrollThreshold) {
+        setIsVisible(true)
+        
+        await right.start({ x: 0 });
+      } 
+      
+      else {
+        await left.start({ x: -1000 });
       }
-    }, 0); 
+    }, 0);
 
     window.addEventListener('scroll', handleScroll);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [left, right, scrollThreshold]); 
 
   return (
-    
     <div>
-      <div className="sticky top-0 xl:bg-fixed bg-center bg-cover w-screen" style={{backgroundImage: `url(${about})`}} >
-          <div className='lg:grid lg:grid-cols-3'>
-              <div className='py-[10%] px-[10%] md:px-[5%] lg:pl-[20%] col-span-2 '>
-                <h2 className='pb-[10%] lg:pb-[5%] text-4xl md:text-5xl font-bold'>About Me</h2>
-                <p className='text-slate-50 text-xl md:text-3xl leading-tight md:leading-relaxed '>I am a passionate full-stack developer dedicated to creating visually appealing and user-centric web applications. I am eager to contribute my expertise to a dynamic team, fostering continuous learning and professional growth. I firmly believe that pushing our boundaries and embracing challenges with a positive and growth-oriented mindset is the key to honing our skills as developers.</p>
-                <button className="bg-emerald-500 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded-lg mt-5">
-                    <a target='_blank' rel="noopener noreferrer" href="https://drive.google.com/file/d/1dA-bhKOABTGtsTuMl0EJXOcZBD5DkzW3/view?usp=sharing">Download CV</a>
-                </button>
-              </div>
-              
-                <div className="relative h-80">
-                  
-                  <div className="absolute top-0 left-0 sm:top-[10%] sm:left-[25%] lg:left-[10%] lg:top-[45%]">
+      <div
+        className="sticky top-0 xl:bg-fixed bg-center bg-cover w-screen"
+        style={{ backgroundImage: `url(${about})` }}
+      >
+        <div className="lg:grid lg:grid-cols-3">
+           <motion.div
+            
+            className="py-[10%] px-[10%] md:px-[5%] lg:pl-[20%] col-span-2"
+          >
+            <motion.h2 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: isVisible ? 1 : 0 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 2.5 }}
+            className="pb-[10%] lg:pb-[5%] text-4xl md:text-5xl font-bold">About Me</motion.h2>
+            <motion.p 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: isVisible ? 1 : 0 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 3.5 }}
+            
+            className="text-slate-50 text-xl md:text-3xl leading-tight md:leading-relaxed">
+              I am a passionate full-stack developer dedicated to creating visually appealing and
+              user-centric web applications. I am eager to contribute my expertise to a dynamic team,
+              fostering continuous learning and professional growth. I firmly believe that pushing our
+              boundaries and embracing challenges with a positive and growth-oriented mindset is the
+              key to honing our skills as developers.
+            </motion.p>
+            <button className="bg-emerald-500 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded-lg mt-5">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://drive.google.com/file/d/1dA-bhKOABTGtsTuMl0EJXOcZBD5DkzW3/view?usp=sharing"
+              >
+                Download CV
+              </a>
+            </button>
+          </motion.div>
+
+           <div className="relative h-80">
+                  {/* first image from left */}
+                <motion.div
+                  initial={{ x: -500 }}
+                  animate={left}
+                  transition={{ duration: 1 }}
+                  className="absolute top-0 left-0 sm:top-[10%] sm:left-[25%] lg:left-[10%] lg:top-[45%]">
                   <img
                     src="/images/1.jpg"
                     alt="Image 1"
-                    className={`border-[3px] h-60 w-52 2xl:w-80 2xl:h-80 object-cover rounded-lg shadow-md transform -rotate-6 ${
-                      isImageVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-20' 
-                    } ease-in-out duration-[1500ms]`}
+                    className={`border-[3px] h-60 w-52 2xl:w-80 2xl:h-80 object-cover rounded-lg shadow-md transform -rotate-6 `}
                   />
-                  </div>
-
-                  <div className="absolute top-[40%] right-[15%] sm:top-5 sm:right-[20%] lg:top-[50%]">
+                </motion.div>
+                  {/* second image from right */}
+                <motion.div
+                  initial={{ x: 500 }}
+                  animate={right}
+                  transition={{ duration: 2}}
+                  className="absolute top-[40%] right-[15%] sm:top-5 sm:right-[20%] lg:top-[50%]">
                     <img
                       src="/images/2.jpg"
                       alt="Image 2"
-                      className={`border-[3px] w-[200px] h-[150px] 2xl:w-52 2xl:h-52 object-cover rounded-lg shadow-md transform rotate-12 ${
-                        isImageVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-20'
-                      }  ease-in-out duration-[3000ms]`}
+                      className={`border-[3px] w-[200px] h-[150px] 2xl:w-52 2xl:h-52 object-cover rounded-lg shadow-md transform rotate-12`}
                     />
-                  </div>
-
-                  <div className="absolute top-5 left-[30%] sm:top-[0%] sm:left-[13%] lg:left-[5%] lg:top-[90%] 2xl:top-[100%]">
+                  </motion.div>
+                  {/* third image from left */}
+                <motion.div
+                  initial={{ x: -500 }}
+                  animate={right}
+                  transition={{ duration: 1}}
+                  className="absolute top-5 left-[30%] sm:top-[0%] sm:left-[13%] lg:left-[5%] lg:top-[90%] 2xl:top-[100%]">
                   <img
                     src="/images/3.jpg"
                     alt="Image 3"
-                    className={`border-[3px] w-[180px] h-36 2xl:w-52 2xl:h-52 object-cover rounded-lg shadow-md transform -rotate-12 ${
-                      isImageVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-20'
-                    } ease-in-out duration-[3000ms]`}
+                    className={`border-[3px] w-[180px] h-36 2xl:w-52 2xl:h-52 object-cover rounded-lg shadow-md transform -rotate-12 `}
                   />
-                  </div>
-
-                  <div className="absolute top-15 right-[3%] sm:top-[25%] sm:right-[35%] lg:top-[100%] 2xl:top-[95%] 2xl:right-[30%]">
+                  </motion.div>
+                  {/* fourth image from bottom */}
+                <motion.div
+                  initial={{ x: 500 }}
+                  animate={right}
+                  transition={{ duration: 1}}
+                  className="absolute top-15 right-[3%] sm:top-[25%] sm:right-[35%] lg:top-[100%] 2xl:top-[95%] 2xl:right-[30%]">
                     <img
                       src="/images/4.jpg"
                       alt="Image 4"
-                      className={`border-[3px]  w-32 h-32 md:w-40 md:h-52 2xl:w-60 2xl:h-60 object-cover rounded-lg shadow-md 2xl:transform 2xl:rotate-6 ${
-                        isImageVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20' 
-                      } ease-in-out duration-[4000ms]`}
+                      className={`border-[3px]  w-32 h-32 md:w-40 md:h-52 2xl:w-60 2xl:h-60 object-cover rounded-lg shadow-md 2xl:transform 2xl:rotate-6 `}
                     />
-                  </div>
+                  </motion.div>
 
                 </div>
-          </div>
-        </div>  
-    </div>
-  )
-}
 
-export default About
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default About;
