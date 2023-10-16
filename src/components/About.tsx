@@ -5,7 +5,7 @@ import { motion, useAnimation } from 'framer-motion';
 
 
 const About = () => {
-  const [isImageVisible, setImageVisible] = useState(false);
+  const [, setImageVisible] = useState(false);
   const scrollThreshold = 150; // Define the scroll threshold
   const [isVisible, setIsVisible] = useState(false);
 
@@ -14,7 +14,7 @@ const About = () => {
   }, []);
 
   
-  const debounce = (func, delay:number) => {
+  const debounce = (func: TimerHandler, delay:number) => {
     let timer:number;
     return () => {
       clearTimeout(timer);
@@ -74,7 +74,7 @@ const About = () => {
             animate={{ opacity: isVisible ? 1 : 0 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 3.5 }}
-            
+
             className="text-slate-50 text-xl md:text-3xl leading-tight md:leading-relaxed">
               I am a passionate full-stack developer dedicated to creating visually appealing and
               user-centric web applications. I am eager to contribute my expertise to a dynamic team,
