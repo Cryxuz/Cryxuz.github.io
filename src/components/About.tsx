@@ -22,10 +22,10 @@ const About = () => {
     };
   };
 
-  const { left, right } = {
+  const { left, top, bot } = {
     left: useAnimation(),
-    right: useAnimation(),
-
+    top: useAnimation(),
+    bot: useAnimation()
   };
 
   useEffect(() => {
@@ -34,15 +34,15 @@ const About = () => {
         setImageVisible(true); 
         setIsVisible(true)
         await left.start({ x: 0 });
+        await top.start({y:0})
+        await bot.start({y:0})
       }  if (window.scrollY > scrollThreshold) {
         setIsVisible(true)
         
-        await right.start({ x: 0 });
+        
       } 
       
-      else {
-        await left.start({ x: -1000 });
-      }
+      
     }, 0);
 
     window.addEventListener('scroll', handleScroll);
@@ -50,7 +50,7 @@ const About = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [left, right, scrollThreshold]); 
+  }, [left, bot, top, scrollThreshold]); 
 
   return (
     <div>
@@ -96,7 +96,7 @@ const About = () => {
            <div className="relative h-80">
                   
                 <motion.div
-                  initial={{ x: -500 }}
+                  initial={{ x: -300 }}
                   animate={left}
                   transition={{ duration: 1 }}
                   className="absolute top-0 left-0 sm:top-[10%] sm:left-[25%] lg:left-[10%] lg:top-[45%]">
@@ -108,8 +108,8 @@ const About = () => {
                 </motion.div>
                   
                 <motion.div
-                  initial={{ x: 500 }}
-                  animate={right}
+                  initial={{ y: -100 }}
+                  animate={top}
                   transition={{ duration: 2}}
                   className="absolute top-[40%] right-[15%] sm:top-5 sm:right-[20%] lg:top-[50%]">
                     <img
@@ -120,9 +120,9 @@ const About = () => {
                   </motion.div>
                   
                 <motion.div
-                  initial={{ x: -500 }}
-                  animate={right}
-                  transition={{ duration: 1}}
+                  initial={{ y: 200 }}
+                  animate={bot}
+                  transition={{ duration: 3}}
                   className="absolute top-5 left-[30%] sm:top-[0%] sm:left-[13%] lg:left-[5%] lg:top-[90%] 2xl:top-[100%]">
                   <img
                     src="/images/3.jpg"
@@ -132,14 +132,14 @@ const About = () => {
                   </motion.div>
                  
                 <motion.div
-                  initial={{ x: 500 }}
-                  animate={right}
-                  transition={{ duration: 1}}
+                  initial={{ y: 200 }}
+                  animate={bot}
+                  transition={{ duration: 2}}
                   className="absolute top-15 right-[3%] sm:top-[25%] sm:right-[35%] lg:top-[100%] 2xl:top-[95%] 2xl:right-[30%]">
                     <img
                       src="/images/4.jpg"
                       alt="Image 4"
-                      className={`border-[3px]  w-[150px] h-32 md:w-40 md:h-52 2xl:w-60 2xl:h-60 object-cover rounded-lg shadow-md 2xl:transform 2xl:rotate-6 `}
+                      className={`border-[3px]  w-[150px] h-32 md:w-40 md:h-52 2xl:w-60 2xl:h-60 object-cover rounded-lg shadow-md 2xl:transform 2xl:rotate-12 `}
                     />
                   </motion.div>
 
