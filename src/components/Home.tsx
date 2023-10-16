@@ -22,7 +22,7 @@ const Home = () => {
         animate={{ opacity: isVisible ? 1 : 0 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 1.5 }}
-        className="sticky top-0 xl:bg-fixed bg-center bg-cover text-center w-screen lg:h-screen"
+        className="sticky top-0 xl:bg-fixed bg-center bg-cover text-center  lg:h-screen"
         style={{ backgroundImage: `url(${home})` }}
       >
         <Navbar />

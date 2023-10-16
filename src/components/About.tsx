@@ -55,7 +55,7 @@ const About = () => {
   return (
     <div>
       <div
-        className="sticky top-0 xl:bg-fixed bg-center bg-cover w-screen"
+        className="sticky top-0 xl:bg-fixed bg-center bg-cover"
         style={{ backgroundImage: `url(${about})` }}
       >
         <div className="lg:grid lg:grid-cols-3">

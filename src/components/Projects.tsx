@@ -86,11 +86,11 @@ const Projects = () => {
                   <li className="bg-green-500 rounded-full py-1 px-3 text-white">▷ TailwindCSS</li>
                 </ul>
               </div>
-              {/* hidden 0px */}
+             
               <div>
                <a href="https://tiffs-donuts.devacademy.nz/" target='_blank'><img className="mx-auto rounded-xl hidden md:block" src="images/donut.jpg" alt="donut homepage" /></a> 
               </div>
-              {/*  */}
+            
             </div>
       </div>
     </div>

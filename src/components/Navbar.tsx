@@ -4,7 +4,7 @@ import { Link as ScrollLink } from 'react-scroll';
 const Navbar = () => {
   return (
     <div>
-      <div className="w-screen h-[100px] bg-transparent flex items-center justify-center lg:justify-start">
+      <div className=" h-[100px] bg-transparent flex items-center justify-center lg:justify-start">
         <ul className="flex space-x-8 md:m-[2%] md:text-2xl">
          
             
