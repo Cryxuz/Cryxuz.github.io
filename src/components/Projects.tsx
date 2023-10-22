@@ -32,10 +32,10 @@ const Projects = () => {
               <div >
               {/* hidden md */}
               <div>
-               <a href="https://ember-bistro.netlify.app/" target='_blank'><img style={{ opacity: isInView ? 1 : 0, transition: 'opacity 3s' }} className="mx-auto rounded-xl w-[80%] block md:hidden my-[14%]" src="/images/ember.jpg" alt="ember restaurant" /></a> 
+               <a href="https://burgerdash.netlify.app/" target='_blank'><img style={{ opacity: isInView ? 1 : 0, transition: 'opacity 3s' }} className="mx-auto rounded-xl w-[80%] block md:hidden my-[14%]" src="/images/burger-dash.jpg" alt="burger dash restaurant" /></a> 
               </div>
               {/*  */}
-              <h2 className="text-center lg:text-left text-4xl md:text-[40px] font-semibold hover:text-emerald-400"><a href="https://ember-bistro.netlify.app/" target="_blank">Ember Bistro <span className="text-2xl">(Pair Programming)</span></a></h2>
+              <h2 className="text-center lg:text-left text-4xl md:text-[40px] font-semibold hover:text-emerald-400"><a href="https://burgerdash.netlify.app/" target="_blank">Burger Dash <span className="text-2xl">(Pair Programming)</span></a></h2>
               <br />
                 <p className="md:text-2xl lg:text-left text-center ">
                 This restaurant project primarily emphasizes front-end development, reservation management, and the secure storage of reservation data in the database. </p>
@@ -55,7 +55,7 @@ const Projects = () => {
               </div>
               {/* hidden 0px */}
               <div style={{ opacity: isInView ? 1 : 0, transition: 'opacity 3s' }}>
-               <a href="https://ember-bistro.netlify.app/" target='_blank'><img style={{ opacity: isInView ? 1 : 0, transition: 'opacity 3s' }} className="mx-auto rounded-xl hidden md:block" src="images/ember.jpg" alt="ember restaurant" /></a> 
+               <a href="https://burgerdash.netlify.app/" target='_blank'><img style={{ opacity: isInView ? 1 : 0, transition: 'opacity 3s' }} className="mx-auto rounded-xl hidden md:block" src="images/burger-dash.jpg" alt="burger dash restaurant" /></a> 
               </div>
               {/*  */}
               
