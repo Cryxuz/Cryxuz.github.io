@@ -49,6 +49,7 @@ const Projects = () => {
             </ul>
           </div>
         </div>
+        {/* Burger Dash  */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[10%] py-[5%]">
             <div >
               <div >
@@ -60,7 +61,7 @@ const Projects = () => {
               <h2 className="text-center lg:text-left text-4xl md:text-[40px] font-semibold hover:text-emerald-400"><a href="https://burgerdash.netlify.app/" target="_blank">Burger Dash <span className="text-2xl">(Pair Programming)</span></a></h2>
               <br />
                 <p className="md:text-2xl lg:text-left text-center ">
-                This restaurant project primarily emphasizes front-end development, reservation management, and the secure storage of reservation data in the database. </p>
+                This restaurant project primarily emphasizes front-end development, reservation management, and the secure storage of reservation data in the database using SERN stack. </p>
                 <br /> 
                 <ul className="hidden lg:flex flex-wrap items-center space-x-2 gap-[5px]">
                   <li className="bg-green-500 rounded-full py-1 px-3 text-white">▷ HTML</li>
