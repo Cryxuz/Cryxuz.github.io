@@ -42,8 +42,7 @@ const Home = () => {
             animate={isVisible ? "visible" : "hidden"}
             className={`text-md md:text-2xl lg:text-3xl `}
           >
-            My goal is to provide users with memorable and efficient interactions.
-          </motion.p>
+          My goal is to provide users with memorable and efficient interactions while continuously learning new programming languages and technologies.          </motion.p>
         </div>
       </motion.div>
     </div>
