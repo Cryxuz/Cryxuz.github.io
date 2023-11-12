@@ -40,7 +40,7 @@ const Home = () => {
             variants={slideVariants}
             initial="hidden"
             animate={isVisible ? "visible" : "hidden"}
-            className={`text-md md:text-2xl lg:text-3xl `}
+            className={`text-md md:text-2xl lg:text-3xl mx-[20%]`}
           >
           My goal is to provide users with memorable and efficient interactions while continuously learning new programming languages and technologies.          </motion.p>
         </div>
