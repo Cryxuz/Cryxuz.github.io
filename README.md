@@ -1,2 +1,2 @@
 # Personal Site
-### URL: paul-t-portfolio.netlify.app
+### URL: https://paul-t-portfolio.netlify.app
