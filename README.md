@@ -1,4 +1,2 @@
 # Personal Site
-## paul-t-portfolio.netlify.app
-
-## React + TypeScript + Vite
+### URL: paul-t-portfolio.netlify.app

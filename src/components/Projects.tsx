@@ -33,9 +33,9 @@ const Projects = () => {
           </div>
           
           <div>
-          <h2 className="text-center lg:text-left text-4xl md:text-[40px] font-semibold hover:text-emerald-400"><a href="https://github.com/Cryxuz/e-commerce-mern" target="_blank">Tailored Tails <span className="text-2xl">(Pair Programming) (Ongoing)</span></a></h2>
+          <h2 className="text-center lg:text-left text-4xl md:text-[40px] font-semibold hover:text-emerald-400"><a href="https://tailored-tails.onrender.com" target="_blank">Tailored Tails <span className="text-2xl">(Pair Programming)</span></a></h2>
           <br />
-            <p className="text-center  lg:text-left md:text-2xl">Tailored Tails, an e-commerce webpage built using the MERN stack, focuses on user authentication & authorization using JWT-auth, user security using bcrypt, Redux and connecting to Stripe</p>
+            <p className="text-center  lg:text-left md:text-2xl">Tailored Tails, an e-commerce webpage built using the MERN stack, focuses on user authentication & authorization using JWT-auth, user security using bcrypt, Redux and connecting to Stripe for payments</p>
             <br />
             <ul className="hidden lg:flex flex-wrap items-center space-x-2 gap-[5px]">
               <li className="bg-green-500 rounded-full py-1 px-3 text-white">▷ HTML</li>
