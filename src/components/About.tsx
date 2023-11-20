@@ -86,7 +86,7 @@ const About = () => {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://drive.google.com/file/d/1dA-bhKOABTGtsTuMl0EJXOcZBD5DkzW3/view?usp=sharing"
+                href="https://drive.google.com/file/d/1nK995KxT0Xk8GJb1vRBJdvCQ0KKSThzC/view?usp=drive_link"
               >
                 Download CV
               </a>
